@@ -1,9 +1,11 @@
 /**
-* Template Name: Arsha - v4.3.0
+* Template Name: Arsha
 * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 (function() {
   "use strict";
 
