@@ -34,6 +34,160 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Chart Flow
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Mukta:300,400,700');
+
+:root {
+  --font-text: 'Mukta', sans-serif;
+  --color-text: #5f39dd;
+  --color-card: #fff;
+  --color-step: #ffb238;
+  --color-bg: var(--color-text);
+}
+.line-container {
+  display: flex;
+  align-items: center; /* Center align the line vertically */
+  justify-content: center; /* Center align the line horizontally */
+  margin: 1rem 0; /* Add margin to create space between containers */
+}
+.line-svg {
+  height: 100%;
+}
+
+.tooltip {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  color: var(--color-card);
+  background: var(--color-step);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2.5px;
+}
+
+.card {
+  line-height: 2;
+  background: var(--color-card);
+  padding: 1.2rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+svg {
+  height: 2rem;
+  align-items: center;
+}
+
+line {
+  stroke: var(--color-bg);
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  stroke-dasharray: 2px 10px;
+  animation: animateline 5s linear both infinite;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #402da3;
+}
+
+p {
+  font-size: 0.95rem;
+  font-weight: 75;
+}
+
+.container__sources {
+  display: flex;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f7f7fa;
+  position: relative;
+  align-items: center; /* Center align the items vertically */
+  justify-content: center; /* Center align the items horizontally */
+}
+
+.container__sources:before {
+  content: 'data sources';
+  @extend .tooltip;
+}
+
+.container__sources div {
+  @extend .card;
+  text-align: left;
+  margin: 0 1rem;
+}
+
+.container__build {
+  padding: 10vh 10vw;
+  border-radius: 8px;
+  background: #f7f7fa;
+  position: relative;
+  text-align: center;
+}
+
+.container__build:before {
+  content: 'build';
+  @extend .tooltip;
+}
+
+.container__build div {
+  @extend .card;
+  margin: 2rem 0;
+}
+
+svg {
+  width: 1rem;
+  height: auto;
+  fill: var(--color-bg);
+}
+
+.container__deploy {
+  background: #f7f7fa;
+  padding: 1.1rem;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.container__deploy:before {
+  
+  @extend .tooltip;
+}
+/* Media query for desktop devices */
+@media (min-width: 1024px) {
+  .container__deploy {
+    max-width: 600px; /* Adjust the max-width value as per your needs */
+    margin: 0 auto; /* Centers the container horizontally */
+  }
+}
+@media (max-width: 700px) {
+  .container__sources {
+    flex-direction: column;
+  }
+
+  .container__sources div {
+    margin: 1rem 0;
+  }
+}
+
+@keyframes animateline {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -5rem;
+  }
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
