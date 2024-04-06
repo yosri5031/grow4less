@@ -14,12 +14,12 @@ body {
   color: #444444;
 }
 .img-fluid2 {
-  width: 100px !important;
-  height: 100px !important;
+  width: 300px !important;
+  height: 300px !important;
 }
 .img-fluid2 img{
-  width: 100px !important;
-  height: 100px !important;
+  width: 280px !important;
+  height: 280px !important;
 }
 a {
   color: #47b2e4;
