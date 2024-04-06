@@ -13,14 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-.img-fluid2 {
-  width: 300px !important;
-  height: 300px !important;
-}
-.img-fluid2 img{
-  width: 280px !important;
-  height: 280px !important;
-}
+
 a {
   color: #47b2e4;
   text-decoration: none;
