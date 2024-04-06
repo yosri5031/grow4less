@@ -13,11 +13,11 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-.img-fluid {
+.img-fluid2 {
   width: 100px !important;
   height: 100px !important;
 }
-.img-fluid img{
+.img-fluid2 img{
   width: 100px !important;
   height: 100px !important;
 }
