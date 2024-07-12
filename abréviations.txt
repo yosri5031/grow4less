@@ -1,0 +1,17 @@
+ZSL: Zero-Shot Learning
+NLP: Natural Language Processing
+BERT: Bidirectional Encoder Representations from Transformers
+TF-IDF : Term Frequency-Inverse Document Frequency
+KNN : K Nearest Neighbors
+RNN : 
+SVD : 
+CRISP-DM : Cross-Industry Standard Process for Data Mining
+AI: Artificial Intelligence
+ML: Machine Learning
+DL: Deep Learning
+UML: Unified Modeling Language
+HTML: Hypertext Markup Language
+CSS: Cascading Style Sheets
+JS: JavaScript
+CSV: Comma-Separated Values
+
